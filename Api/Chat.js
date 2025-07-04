@@ -21,9 +21,9 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: 'Missing required fields' });
     }
     
-    const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY2;
+    const OPENROUTER_API_KEY2 = process.env.OPENROUTER_API_KEY2;
     
-    if (!OPENROUTER_API_KEY) {
+    if (!OPENROUTER_API_KEY2) {
       return res.status(500).json({ error: 'OpenRouter API key not configured' });
     }
     
