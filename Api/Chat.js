@@ -92,13 +92,13 @@ Thông tin người dùng:
     const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${OPENROUTER_API_KEY}`,
+        'Authorization': `Bearer ${OPENROUTER_API_KEY2}`,
         'HTTP-Referer': `https://${req.headers.host}`,
         'Content-Type': 'application/json',
         'X-Title': 'AI Khai Van Assistant'
       },
       body: JSON.stringify({
-        model: 'openai/gpt-3.5-turbo', // Có thể đổi model tùy ý
+        model: 'openai/gpt-4o-mini', // Có thể đổi model tùy ý
         messages: messages,
         temperature: 0.8,
         max_tokens: 600
